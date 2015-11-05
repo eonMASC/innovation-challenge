@@ -53,15 +53,16 @@ Debera desarrollarse un modulo (de aqui en adelante MODULO DE TAREAS) para el re
 
 ####  Caso 6: 
 Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el usuario, que es el Titulo, los otros datos minimos requeridos tendran valor por default:
+
  1. Titulo (Obligatorio capturado)
  2. Fecha y Hora de Creacion (Obligatorio por default): Sera igual a la fecha y hora de creacion hasta que el usuario decida alterar este campo y asignar otra fecha-hora de inicio de la tarea.
  3. Usuario que Creo la Tarea (Obligatorio = Usuario de la Sesion activa).
 
 ####	Caso 7:
 Cada tarea debera ser de 1 solo tipo dentro de los 3 posibles, que son:
- - TAREA (Planificada).
+ - PLANIFICADA..
  - MEJORA (Propuesta libre).
- - FIX (Correccion de Error).
+ - CORRECCIÓN (Correccion de Error).
 
 #### 	Caso 8:
 Cada tarea tendra mas campos opcionales, que podran ser agregados en forma de captura/edicion ampliada, los cuales son:

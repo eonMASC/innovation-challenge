@@ -6,7 +6,7 @@ El objetivo final sera desarrollar un prototipo funcional de sistema web que sir
 
 ---
 
-## BASES:
+## Bases:
 
 1. Deberan participar de manera individual y sin asesoria de ningun personal a cargo.
 2. Es de caracter obligatorio para el personal de Desarrollo y opcional para el resto de los departamentos.
@@ -14,7 +14,7 @@ El objetivo final sera desarrollar un prototipo funcional de sistema web que sir
 4. Las instalaciones de EONCORE estan disponibles para el desarrollo de los proyectos las 24 horas de los fines de semana, asi como de 6:00 PM a 9:00 AM entre semana.
 
 
-## REQUERIMIENTOS TECNICOS MINIMOS:
+## Requerimientos Tecnicos minimos:
 
  1. Tecnologias Requeridas:
    2. **AngularJS 1.4+.** (Recomendado 1.5)
@@ -34,7 +34,7 @@ El objetivo final sera desarrollar un prototipo funcional de sistema web que sir
      3. **NPM:** Hacer modulo de Node una o mas partes del proyecto.
      4. Captcha Avanzado: Elementos de Autenticacion por Audio o Interaccion, diferente a Imagenes con caracteres obfuscados. 
 
- 3. Caracteristicas del Proyecto (Casos de Uso):
+## Caracteristicas del Proyecto (Casos de Uso):
 
 ####  Caso 1:
 El sistema debera ser tipo Panel con acceso por Autenticacion con cuenta de Correo y Password.
@@ -54,47 +54,43 @@ Debera desarrollarse un modulo (de aqui en adelante MODULO DE TAREAS) para el re
 ####  Caso 6: 
 Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el usuario, que es el Titulo, los otros datos minimos requeridos tendran valor por default:
 
- 1. Titulo (Obligatorio capturado)
- 2. Fecha y Hora de Creacion (Obligatorio por default): Sera igual a la fecha y hora de creacion hasta que el usuario decida alterar este campo y asignar otra fecha-hora de inicio de la tarea.
- 3. Usuario que Creo la Tarea (Obligatorio = Usuario de la Sesion activa).
+ 1. **Titulo** (Obligatorio capturado)
+ 2. **Fecha y Hora de Creacion** (Obligatorio por default): Sera igual a la fecha y hora de creacion hasta que el usuario decida alterar este campo y asignar otra fecha-hora de inicio de la tarea.
+ 3. **Usuario que Creo la Tarea** (Obligatorio = Usuario de la Sesion activa).
 
 ####	Caso 7:
 Cada tarea debera ser de 1 solo tipo dentro de los 3 posibles, que son:
- - PLANIFICADA..
- - MEJORA (Propuesta libre).
- - CORRECCIÓN (Correccion de Error).
+ - **PLANIFICADA**.
+ - **MEJORA** (Propuesta libre).
+ - **CORRECCIÓN** (Corrección de Error).
 
 #### 	Caso 8:
 Cada tarea tendra mas campos opcionales, que podran ser agregados en forma de captura/edicion ampliada, los cuales son:
- - Descripcion 
- - Fecha y Hora de Terminado
+ - Descripcion.
+ - Fecha y Hora de Terminado.
  - Fecha y Hora de Compromiso de Terminado.
- - Status
+ - Status.
 	
 #### 	Caso 9:
-		El campo Status de cada tarea debera tener minimo las siguientes posibilidades:
-			-En Espera (Nunca comenzada)
-			-En Proceso (Comenzada almenos una vez)
-			-En Pausa (No trabajandose actualmente, pero ya iniciada anteriormente)
-			-Terminada.
-			-Cancelada (No se realizara mas)
+El campo Status de cada tarea debera tener minimo las siguientes posibilidades:
+ - **En Espera** (Nunca comenzada).
+ - **En Proceso** (Comenzada almenos una vez).
+ - **En Pausa** (No trabajandose actualmente, pero ya iniciada anteriormente).
+ - **Terminada**.
+ - **Cancelada** (No se realizara mas).
 		
 #### 	Caso 10:
-		Cada tarea podra ser relacionada muchos-a-muchos con 3 tipos de registro:
-			-Usuarios (Obligatorio con condiciones): 
-				*SI tipo = TAREA:
-					El creador de la tarea es la unica relacion minima necesaria para la tarea, pudiendo agregar mas usuarios libremente.
-				*SI tipo = MEJORA o tipo = FIX:
-					La relacion puede quedar vacia, hasta el momento en que se cambie el Status = En Proceso, en cuyo caso debera tener almenos un Usuario agregado.
+Cada tarea podra ser relacionada muchos-a-muchos con 3 tipos de registro:
+ - Usuarios (Obligatorio con condiciones): 
+	 * SI **tipo = PLANIFICADA**: El creador de la tarea es la unica relacion minima necesaria para la tarea, pudiendo agregar mas usuarios libremente.
+	 * SI **tipo = MEJORA o tipo = CORRECCIÓN**: La relacion puede quedar vacia, hasta el momento en que se cambie el Status = En Proceso, en cuyo caso debera tener almenos un Usuario agregado.
 
-			-Etiquetas (Opcional):
-				La creacion y asignacion de Etiquetas es libre e ilimitada, por lo que el catalogo de etiquetas debera estar abierto a registros nuevos y estar indexado en base al Texto de la etiqueta.
+ - Etiquetas (Opcional): La creacion y asignacion de Etiquetas es libre e ilimitada, por lo que el catalogo de etiquetas debera estar abierto a registros nuevos y estar indexado en base al Texto de la etiqueta.
 			
-			-Proyectos (Opcional):
-				Cualquier tarea puede o no tener uno o mas Proyectos relacionados.
+ - Proyectos (Opcional): Cualquier tarea puede o no tener uno o mas Proyectos relacionados.
 
 #### 	Caso 11:
-			Debera desarrollarse un modulo (de aqui en adelante MODULO DE PROYECTOS) para el registro de Proyectos, que permita crearlos, editarlos, borrarlos y consultarlos.
+Debera desarrollarse un modulo (de aqui en adelante MODULO DE PROYECTOS) para el registro de Proyectos, que permita crearlos, editarlos, borrarlos y consultarlos.
 
 #### 	Caso 12:
 

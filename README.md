@@ -59,9 +59,9 @@ Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el us
 
 	Caso 7:
 		Cada tarea debera ser de 1 solo tipo dentro de los 3 posibles, que son:
-			-TAREA (Planificada).
+			-PLANIFICADA.
 			-MEJORA (Propuesta libre).
-			-FIX (Correccion de Error).
+			-CORRECCIÓN (Correccion de Error).
 
 	Caso 8:
 		Cada tarea tendra mas campos opcionales, que podran ser agregados en forma de captura/edicion ampliada, los cuales son:

@@ -35,6 +35,7 @@ El objetivo final sera desarrollar un prototipo funcional de sistema web que sir
      4. Captcha Avanzado: Elementos de Autenticacion por Audio o Interaccion, diferente a Imagenes con caracteres obfuscados. 
 
  3. Caracteristicas del Proyecto (Casos de Uso):
+
 ####  Caso 1:
 El sistema debera ser tipo Panel con acceso por Autenticacion con cuenta de Correo y Password.
 
@@ -52,25 +53,24 @@ Debera desarrollarse un modulo (de aqui en adelante MODULO DE TAREAS) para el re
 
 ####  Caso 6: 
 Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el usuario, que es el Titulo, los otros datos minimos requeridos tendran valor por default:
-			-Titulo (Obligatorio capturado)
-			-Fecha y Hora de Creacion (Obligatorio por default): 
-				Sera igual a la fecha y hora de creacion hasta que el usuario decida alterar este campo y asignar otra fecha-hora de inicio de la tarea.
-			-Usuario que Creo la Tarea (Obligatorio = Usuario de la Sesion activa).
+ 1. Titulo (Obligatorio capturado)
+ 2. Fecha y Hora de Creacion (Obligatorio por default): Sera igual a la fecha y hora de creacion hasta que el usuario decida alterar este campo y asignar otra fecha-hora de inicio de la tarea.
+ 3. Usuario que Creo la Tarea (Obligatorio = Usuario de la Sesion activa).
 
-	Caso 7:
-		Cada tarea debera ser de 1 solo tipo dentro de los 3 posibles, que son:
-			-TAREA (Planificada).
-			-MEJORA (Propuesta libre).
-			-FIX (Correccion de Error).
+####	Caso 7:
+Cada tarea debera ser de 1 solo tipo dentro de los 3 posibles, que son:
+ - TAREA (Planificada).
+ - MEJORA (Propuesta libre).
+ - FIX (Correccion de Error).
 
-	Caso 8:
-		Cada tarea tendra mas campos opcionales, que podran ser agregados en forma de captura/edicion ampliada, los cuales son:
-			-Descripcion 
-			-Fecha y Hora de Terminado
-			-Fecha y Hora de Compromiso de Terminado.
-			-Status
+#### 	Caso 8:
+Cada tarea tendra mas campos opcionales, que podran ser agregados en forma de captura/edicion ampliada, los cuales son:
+ - Descripcion 
+ - Fecha y Hora de Terminado
+ - Fecha y Hora de Compromiso de Terminado.
+ - Status
 	
-	Caso 9:
+#### 	Caso 9:
 		El campo Status de cada tarea debera tener minimo las siguientes posibilidades:
 			-En Espera (Nunca comenzada)
 			-En Proceso (Comenzada almenos una vez)
@@ -78,7 +78,7 @@ Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el us
 			-Terminada.
 			-Cancelada (No se realizara mas)
 		
-	Caso 10:
+#### 	Caso 10:
 		Cada tarea podra ser relacionada muchos-a-muchos con 3 tipos de registro:
 			-Usuarios (Obligatorio con condiciones): 
 				*SI tipo = TAREA:
@@ -92,10 +92,10 @@ Cada tarea debera poderse dar de alta con 3 datos minimos, 1 capturado por el us
 			-Proyectos (Opcional):
 				Cualquier tarea puede o no tener uno o mas Proyectos relacionados.
 
-	Caso 11:
+#### 	Caso 11:
 			Debera desarrollarse un modulo (de aqui en adelante MODULO DE PROYECTOS) para el registro de Proyectos, que permita crearlos, editarlos, borrarlos y consultarlos.
 
-	Caso 12:
+#### 	Caso 12:
 
 
 
